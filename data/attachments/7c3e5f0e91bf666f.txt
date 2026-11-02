@@ -1,0 +1,5 @@
+2026-11-02 17:59:30  [INFO   ]  Open → https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-02 17:59:32  [INFO   ]  Type 'Admin' → ('name', 'username')
+2026-11-02 17:59:32  [INFO   ]  Type 'admin123' → ('name', 'password')
+2026-11-02 17:59:32  [INFO   ]  Click → ('xpath', "//button[@type='submit']")
+2026-11-02 17:59:33  [INFO   ]  Get text → ('xpath', "//p[@class='oxd-userdropdown-name']")

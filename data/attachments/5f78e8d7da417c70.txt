@@ -1,0 +1,4 @@
+INFO     OrangeHRM:base_page.py:23 Open → https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+INFO     OrangeHRM:base_page.py:31 Type 'wrong_user' → ('name', 'username')
+INFO     OrangeHRM:base_page.py:31 Type 'wrong_password' → ('name', 'password')
+INFO     OrangeHRM:base_page.py:27 Click → ('xpath', "//button[@type='submit']")
