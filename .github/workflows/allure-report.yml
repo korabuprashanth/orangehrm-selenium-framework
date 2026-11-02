@@ -24,18 +24,20 @@ jobs:
       - name: Run tests
         run: pytest --headless
         continue-on-error: true   # keep going so the report is still published
-        
-      - name: Get Allure history
+
+      - name: Get Allure history from gh-pages
         uses: actions/checkout@v4
-        continue-on-error: true
+        continue-on-error: true   # fails if gh-pages does not exist yet
         with:
           ref: gh-pages
-          path: allure-history
+          path: gh-pages
+
       - name: Build Allure report
         if: always()
         uses: simple-elf/allure-report-action@v1.12
         with:
           allure_results: reports/allure-results
+          gh_pages: gh-pages
           allure_history: allure-history
           keep_reports: 20
 
