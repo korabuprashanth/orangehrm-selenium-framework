@@ -1,0 +1,21 @@
+# String — no quotes needed for simple strings
+browser: chrome
+
+# String with special characters — use quotes
+base_url: "https://opensource-demo.orangehrmlive.com"
+
+# Integer — no quotes
+timeout: 30
+
+# Boolean — true/false (lowercase)
+headless: false
+
+# Nested dictionary — indent with 2 spaces
+credentials:
+  username: Admin
+  password: admin123
+
+# Nested nested dictionary
+timeouts:
+  implicit: 10
+  page_load: 30
